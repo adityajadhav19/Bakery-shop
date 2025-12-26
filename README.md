@@ -78,3 +78,4 @@ This project is designed and developed as a **production-ready freelance solutio
 DATABASE_URL=postgresql://...
 JWT_SECRET=your-secret-key
 NODE_ENV=production
+IMG_DB=if you are adding images from device then use cloudinary
