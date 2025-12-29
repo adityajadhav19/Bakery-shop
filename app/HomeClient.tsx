@@ -82,10 +82,10 @@ export default function HomeClient({ products }: { products: any[] }) {
               {t.featured}
             </Badge>
             <h2 className="text-3xl font-bold mt-4 text-[rgb(139,69,19)]">{t.bestSellers}</h2>
-            <p className="text-gray-600 mt-2">{t.featuredDescription}</p>
+            <p className="text-black mt-2">{t.featuredDescription}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 text-black">
             {products.map((p) => (
               <Card key={p.id}>
                 <Image
@@ -95,7 +95,7 @@ export default function HomeClient({ products }: { products: any[] }) {
                   height={300}
                   className="rounded-t-lg"
                 />
-                <CardContent className="p-4 space-y-2">
+                <CardContent className="p-4 space-y-2 text-black">
                   <h3 className="font-bold">{p.name}</h3>
                   <p>{p.price}</p>
                   <Button asChild className="w-full bg-[rgb(139,69,19)]">

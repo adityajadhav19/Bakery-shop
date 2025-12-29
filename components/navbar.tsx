@@ -80,7 +80,7 @@ export default function Navbar() {
           </Link>
 
           {/* DESKTOP NAV */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-6 ">
             {navigation.map((item) => (
               <Link
                 key={item.key}
@@ -150,7 +150,7 @@ export default function Navbar() {
           </div>
 
           {/* MOBILE MENU BUTTON */}
-          <div className="md:hidden">
+          <div className="md:hidden text-gray-900">
             <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X /> : <Menu />}
             </Button>
@@ -159,13 +159,13 @@ export default function Navbar() {
 
         {/* MOBILE NAV */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t px-4 py-3 space-y-3">
+          <div className="md:hidden bg-white border-t px-4 py-3 space-y-3 text-black">
             {navigation.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-700 font-medium"
+                className="block text-gray-900 font-medium"
               >
                 {t[item.key as keyof typeof t]}
               </Link>
